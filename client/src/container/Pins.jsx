@@ -4,6 +4,7 @@ import { Navbar, Feed, PinDetail, CreatePin, Search } from "../components"
 
 const Pins = ({ user }) => {
   const [searchTerm, setSearchTerm] = useState("")
+  // console.log(user)
 
   return (
     <div className="px-2 px-5">
@@ -15,7 +16,7 @@ const Pins = ({ user }) => {
           <Route path="/" element={<Feed />} />
           <Route path="/category/:categoryId" element={<Feed />} />
           <Route path="/pin-detail/:pinId" element={<PinDetail user={user} />} />
-          <Route path="/create-pin" element={<CreatePin user={user} />} />
+          <Route path="/create-pin" element={<CreatePin key={user?._id} user={user} />} />
           <Route path="/search" element={<Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />} />
         </Routes>
       </div>

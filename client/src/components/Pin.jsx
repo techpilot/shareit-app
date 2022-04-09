@@ -13,8 +13,6 @@ const Pin = ({ pin: { postedBy, image, _id, destination, save } }) => {
   const navigate = useNavigate();
   const user = fetchUser();
 
-  console.log(postedBy)
-
   const alreadySaved = !!(save?.filter((item) => item.postedBy._id === user.googleId))?.length;
 
   const savePin = (id) => {
