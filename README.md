@@ -57,3 +57,4 @@ You can learn how the app was setup
 
 One of the easiest ways to deploy your React app is to use the [Netlify Platform](https://www.netlify.com/)
 
+### The project is currently available for a live preview [here](https://keccakinsta.netlify.app/)
