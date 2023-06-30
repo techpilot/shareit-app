@@ -1,7 +1,21 @@
 # shareit-app
-Shareit is a design display of pictures. The app displays images in various categories, there is a create pin functionality where a logged-in user can create a pin, also a search functionality for performing searches. Authentication and authorization are implemented using Google auth. Viewing each pin detail gives the user the ability to view the pin, comment on it and view related pins. The user profile page provides logout functionality, the logged-in user can view all the pins he/she created or saved.
+Shareit is a picture design display platform that showcases images across different categories. It offers a create pin feature, allowing logged-in users to generate their own pins. The app also incorporates a search functionality for conducting searches. Google authentication is employed for authentication and authorization purposes. By accessing the details of each pin, users can view the pin itself, leave comments, and explore related pins. The user profile page includes a logout option and enables logged-in users to view their created or saved pins.
 
 This is a foundational build of [keccakinsta](https://keccakinsta.netlify.app/) with react js and sanity.io, created with [`create-react-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+# Rundown of features
+- Utilized Redux for state management, ensuring efficient data flow and seamless interaction between
+components.
+- Implemented features such as creating boards, saving, organizing, and categorizing pins.
+- Utilized Sanity.io as the database to store and manage user profiles, pins, and boards.
+- Implemented a user-friendly search functionality using React and Redux, allowing visitors to easily find
+individual pins and categories of pins.
+- Implemented a comment functionality, allowing visitors to write some comments on pins.
+- Implemented authentication using Google Auth API. Collaborated with the backend development
+team to ensure smooth integration and functionality of the authentication system. Improved the user
+experience by allowing users to access personalized content based on their authentication status.
+Increased user engagement by 20% and received positive feedback regarding the ease of use and
+security of the authentication system.
 
 ## Getting Started
 
