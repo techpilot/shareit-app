@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { RiHomeFill } from 'react-icons/ri'
-import { IoIosArrowForward } from 'react-icons/io'
+// import { IoIosArrowForward } from 'react-icons/io'
 
 import logo from "../assets/logo.png"
 import { categories } from '../utils/data'
@@ -49,7 +49,7 @@ const Sidebar = ({ user, closeToggle }) => {
         </div>
       </div>
 
-      {user && (
+      {user ? (
         <Link
           to={`user-profile/${user._id}`}
           className="flex my-5 mb-3 gap-2 p-2 items-center bg-white rounded-lg shadow-lg mx-3"
@@ -57,6 +57,15 @@ const Sidebar = ({ user, closeToggle }) => {
         >
           <img src={user.image} alt="user-profile" className="w-10 h-10 rounded-full" />
           <p>{user.username}</p>
+        </Link>
+      ):(
+        <Link
+          to={`login`}
+          className="flex my-5 mb-3 gap-2 p-2 items-center justify-center bg-white rounded-lg shadow-lg mx-3 font-bold"
+          onClick={handleCloseSidebar}
+        >
+          {/* <img src={user.image} alt="user-profile" className="w-10 h-10 rounded-full" /> */}
+          <p>Log in</p>
         </Link>
       )}
     </div>

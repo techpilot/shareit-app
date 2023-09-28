@@ -54,7 +54,8 @@ const UserProfile = () => {
   const logout = () => {
     localStorage.clear();
 
-    navigate('/login')
+    navigate('/')
+    window.location.reload()
   }
 
   if (!user) return <Spinner message="Loading profile..."/>

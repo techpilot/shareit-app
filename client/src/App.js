@@ -7,14 +7,14 @@ import { useEffect } from 'react';
 import { fetchUser } from './utils/fetchUser';
 
 function App() {
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
 
-  useEffect(() => {
-    const user = fetchUser()
-    console.log(user)
+  // useEffect(() => {
+  //   const user = fetchUser()
+  //   console.log(user)
 
-    if (!user) navigate("/login")
-  }, [])
+  //   if (!user) navigate("/login")
+  // }, [])
 
   return (
     <Routes>
